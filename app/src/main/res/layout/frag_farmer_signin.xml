@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chinmoydash.farmer2retailer.FarmerSignIn">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/farmermail_si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/farmerpass_si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_below="@id/farmermail_si"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/farmersign_si"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sign up" />
+</RelativeLayout >

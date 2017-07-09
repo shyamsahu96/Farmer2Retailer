@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.chinmoydash.farmer2retailer.RetailerSignIn">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/retailername_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textEmailAddress" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/retailermail_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retailername_up"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/retailerpass_up"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/retailermail_up"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retailerpass_up"
+        android:id="@+id/farmermob_up"
+        android:hint="Mobile No"
+        android:inputType="number"
+        app:met_minCharacters="10"
+        app:met_checkCharactersCountAtBeginning="false"/>
+
+    <Button
+        android:id="@+id/btncandsign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sign up" />
+
+</RelativeLayout>
